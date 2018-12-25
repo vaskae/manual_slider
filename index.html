@@ -5,17 +5,16 @@
 <link rel="stylesheet" href="">
 <style>
 
-.w3-animate-fading1{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.w3-animate-fading2{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-</style>
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
 <body>
 
 <h2 class="w3-center">Manual Slideshow</h2>
 
 <div class="w3-content w3-display-container">
-  <img class="mySlides w3-animate-fading1 " src="images/1.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading2 " src="images/2.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading1 " src="images/3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading " src="images/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading " src="images/2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading " src="images/3.jpg" style="width:100%">
   
 
   <button class="w3-button w3-black w3-display-left" onClick="plusDivs(-1)">&#10094;</button>
@@ -55,7 +54,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.cssText = "display:block; width:100%; ";  
-  setTimeout(carousel, 7000 ); // Change image every 2 seconds
+  setTimeout(carousel, 9000 ); // Change image every 2 seconds
  
   
 }
